@@ -133,8 +133,6 @@ STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-SENDGRID_API_KEY='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'
-
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
