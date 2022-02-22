@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #333;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    transition: 0.3s;
+}
+
+a.brand{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #2873ff;
+}
+
+.navbar-items{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+
+.nav-item{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.container{
+    padding: 0 100px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    max-width: 100%;
+    flex: 1 1;
+    margin: 50px 0 0 0;
+}
+
+.info-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #333;
+    justify-content: center;
+    padding: 50px;
+    margin-right: 50px;
+}
+
+.info-box h1{
+    margin-bottom: 10px;
+}
+
+.form-box{
+    background-color: #fff;width: 50%;
+}
+
+form{
+    border: 2px solid #333;
+    padding: 20px;
+}
+
+form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+form button{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.about, .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px;
+    margin-left: 50px;
+    border: 2px solid #333;
+}
+
+.social-link{
+    color: #0b3e55;
+    margin-right: 10px;
+    padding: 10px;
+    /* text-decoration: none; */
+}
+.social-link:first-child{
+    padding-left: 0;
+}
+.social-link:last-child{
+    margin-right: 0;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 920px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .info-box{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .form-box{
+        width: 100%;
+    }
+    .about, .contact{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar{
+        padding: 0 30px;
+    }
+    .container{
+        padding: 0 30px;
+    }
+
+    .info-box{
+        padding: 30px;
+    }
+}

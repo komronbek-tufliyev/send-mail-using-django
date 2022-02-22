@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="info-box">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ullam nisi omnis quos recusandae vel ab consectetur quo, eveniet perferendis natus non ipsam molestias iure consequatur totam saepe provident voluptate explicabo eaque blanditiis quam voluptatem perspiciatis! Ea enim nam, possimus modi totam ullam deleniti dignissimos ab, eaque reiciendis delectus ipsum.</p>
+</div>
+<div class="form-box"> 
+    <form method="post">
+        {% csrf_token %}
+        <h1>Send Emails</h1>
+        <input type="email" name="email" placeholder="To: " required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="content" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
+</div>
+{% endblock %}
